@@ -79,6 +79,43 @@
                     <p>px</p>
                 </div>
             </div>
+            <div class="form-control">
+                <div class="range-input">
+                    <label for="color">Cor da sombra:</label>
+                    <input 
+                        type="color" 
+                        id="color" 
+                        name="color" 
+                        value="#000000";
+                    >
+                </div>
+                <div class="reference-input">
+                    <input type="text" name="color-value" id="color-value">
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="range-input">
+                    <label for="opacity">Opacidade:</label>
+                    <input 
+                        type="range" 
+                        id="opacity" 
+                        name="opacity" 
+                        min="0"
+                        max="1"
+                        value="1"
+                        step="0.01"
+                    >
+                </div>
+                <div class="reference-input">
+                    <input type="text" name="opacity-value" id="opacity-value">
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="range-input">
+                   <label for="opacity">Sombra interna? (Inset)</label>
+                   <input type="checkbox" name="inset" id="inset">
+                </div>
+            </div>
         </div>
         <div id="preview">
             <h2>Preview do efeito gerado:</h2>
@@ -88,10 +125,11 @@
     <div id="generated-rule">
         <h2>Copie e cole seu arquivo de CSS:</h2>
         <div id="rules-area">
-            <p id="rule">box-shadow: <span></span></p>
-            <p id="webkit-rule">webkit-box-shadow: <span></span></p>
-            <p id="moz-rule">moz-box-shadow: <span></span></p>
+            <p id="rule">box-shadow: <span></span>;</p>
+            <p id="webkit-rule">webkit-box-shadow: <span></span>;</p>
+            <p id="moz-rule">moz-box-shadow: <span></span>;</p>
         </div>
+        <p id="copy-instructions">Clique no quadro acima para copiar as regras</p>
     </div>
 </body>
 </html>
